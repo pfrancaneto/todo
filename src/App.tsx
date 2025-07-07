@@ -1,9 +1,11 @@
 import TrashIcon from './assets/icons/trash.svg?react';
 import SpinnerIcon from './assets/icons/spinner.svg?react';
+import PlusIcon from './assets/icons/plus.svg?react';
 
 import Icon from './components/Icon';
 import Badge from './components/Badge';
 import Text from './components/Text';
+import Button from './components/Button';
 
 export default function App() {
   return (
@@ -18,6 +20,9 @@ export default function App() {
       <div>
         <Badge variant="secondary">5</Badge>
         <Badge variant="primary">2 de 3</Badge>
+      </div>
+      <div>
+        <Button icon={PlusIcon}>Deletar transação</Button>
       </div>
     </div>
   );
