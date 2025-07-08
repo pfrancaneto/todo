@@ -6,6 +6,7 @@ import Icon from './components/Icon';
 import Badge from './components/Badge';
 import Text from './components/Text';
 import Button from './components/Button';
+import ButtonIcon from './components/ButtonIcon';
 
 export default function App() {
   return (
@@ -23,6 +24,11 @@ export default function App() {
       </div>
       <div>
         <Button icon={PlusIcon}>Deletar transação</Button>
+      </div>
+      <div>
+        <ButtonIcon icon={TrashIcon} />
+        <ButtonIcon icon={TrashIcon} variant="secondary" />
+        <ButtonIcon icon={TrashIcon} variant="tertiary" />
       </div>
     </div>
   );
