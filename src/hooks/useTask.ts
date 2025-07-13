@@ -25,5 +25,11 @@ export default function useTask() {
     );
   }
 
-  return { prepareTask, updateTask };
+  function updateTaskStatus(id: string, concluded: boolean) {
+    setTasks(
+      tasks.map((task) => (task.id === id ? { ...task, concluded } : task)),
+    );
+  }
+
+  return { prepareTask, updateTask, updateTaskStatus };
 }
